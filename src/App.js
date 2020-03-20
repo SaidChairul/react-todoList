@@ -1,15 +1,12 @@
 import React from "react";
 import "./styles.css";
 import Paper from "./components/paper";
+import Header from "./components/header";
 
 export default function App() {
   return (
     <Paper>
-      <section className="sc-header">
-        <button className="sc-headerBtn main-darkslategray-color">ADD</button>
-        <h1 className="sc-title">Todo List</h1>
-        <button className="sc-headerBtn main-sandybrown-color">CLEAR</button>
-      </section>
+      <Header />
 
       <section className="sc-add">
         <form action="" className="sc-addForm">
