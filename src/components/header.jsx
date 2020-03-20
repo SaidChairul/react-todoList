@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ children }) => {
+const Header = () => {
   return (
     <section className="sc-header">
       <button className="sc-headerBtn main-darkslategray-color">ADD</button>
