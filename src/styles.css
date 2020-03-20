@@ -1,4 +1,144 @@
-.App {
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-sandybrown-color: #f4d53f;
+  --main-darkslategray-color: #484848;
+}
+
+.main-sandybrown-color {
+  color: var(--main-sandybrown-color);
+}
+
+.main-darkslategray-color {
+  color: var(--main-darkslategray-color);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #2d2d2d;
+  /* height: 100vh; */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.sc-container {
+  width: 600px;
+  height: 800px;
+  background: #f2eecb;
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.sc-frame {
+  border: 1px solid var(--main-darkslategray-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sc-header {
+  display: flex;
+  color: var(--main-darkslategray-color);
+  align-items: flex-start;
+}
+
+.sc-headerBtn {
+  font-size: 1.8rem;
+  font-family: "Russo One", sans-serif;
+  background: unset;
+  border: unset;
+  outline: unset;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.sc-headerBtn.main-sandybrown-color:active {
+  text-shadow: 1px 1px 2px var(--main-sandybrown-color);
+}
+
+.sc-headerBtn.main-darkslategray-color:active {
+  text-shadow: 1px 1px 2px var(--main-darkslategray-color);
+}
+
+.sc-title {
+  font-size: 3.6rem;
+  font-family: "Great Vibes", cursive;
+  text-transform: lowercase;
+  font-weight: 100;
+  flex: 1;
   text-align: center;
+}
+
+.sc-add {
+  padding: 16px;
+}
+
+.sc-addForm {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sc-addInput {
+  background: unset;
+  border: unset;
+  padding: 0 64px;
+  flex: 1;
+  border-bottom: 1px solid var(--main-sandybrown-color);
+  outline: unset;
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  text-transform: lowercase;
+}
+
+.sc-addBtn {
+  font-size: 1.8rem;
+  font-family: "Russo One", sans-serif;
+  padding: 16px;
+  padding-right: unset;
+  cursor: pointer;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.sc-addBtn.main-darkslategray-color:active {
+  text-shadow: 1px 1px 2px var(--main-darkslategray-color);
+}
+
+.sc-todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-todo {
+  position: relative;
+  flex: 1 0 auto;
+  text-align: center;
+  min-height: 34px;
+  margin: 16px 0 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 24px;
+  border-bottom: 1px solid var(--main-sandybrown-color);
+}
+
+.sc-todoText {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
